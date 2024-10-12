@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+#package-section {
+  width: 100%;
+  min-height: 100vh;
+}
+#package-section .container {
+  min-height: inherit;
+}
+#package-section .container .content-container {
+  min-height: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#package-section .container .content-container .package-container {
+  width: 462px;
+  height: auto;
+  padding: 60px;
+}
+#package-section .container .content-container .package-container .heading-div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  align-items: center;
+}
+#package-section .container .content-container .package-container .heading-div .heading {
+  text-wrap: nowrap;
+}
+#package-section .container .content-container .package-container .heading-div .hr {
+  height: 1px;
+  background-color: #C8C8C8;
+}
+#package-section .container .content-container .package-container .package-form .each-package {
+  border: 0.9px solid #C8C8C8;
+  cursor: pointer;
+  position: relative;
+}
+#package-section .container .content-container .package-container .package-form .each-package .most-popular-div {
+  position: absolute;
+  top: -6px;
+  right: -1px;
+}
+#package-section .container .content-container .package-container .package-form .each-package .most-popular-div img {
+  object-fit: contain;
+  width: 100px;
+}
+#package-section .container .content-container .package-container .package-form .each-package .hidden-div {
+  display: none;
+  margin-top: 24px;
+}
+#package-section .container .content-container .package-container .package-form .each-package .hidden-div .details-table {
+  border-spacing: 10px;
+}
+#package-section .container .content-container .package-container .package-form .each-package .hidden-div .details-table .table-body .each-row .selection-div {
+  padding: 4px 6px;
+  width: 65px;
+  background-color: white;
+  border: 0.9px solid #C8C8C8;
+  position: relative;
+}
+#package-section .container .content-container .package-container .package-form .each-package .hidden-div .details-table .table-body .each-row .selection-div:hover .dropdown {
+  display: block;
+}
+#package-section .container .content-container .package-container .package-form .each-package .hidden-div .details-table .table-body .each-row .selection-div .dropdown {
+  position: absolute;
+  display: none;
+  padding: 4px 6px;
+  background-color: white;
+  width: 100%;
+  z-index: 99999;
+  top: 105%;
+  left: 0;
+  box-shadow: 1px 2px 5px 0px gray;
+}
+#package-section .container .content-container .package-container .package-form .each-package:nth-child(2) .hidden-div {
+  display: block;
+}
+#package-section .container .content-container .package-container .package-form .button-div .add-to-cart-button {
+  cursor: pointer;
+  padding: 12px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  #package-section .container .content-container .package-container {
+    padding: 24px;
+  }
+}
